@@ -24,7 +24,7 @@ jobs:
         cp count_files.sh ~/rpmbuild/SOURCES/
         cp etc-file-counter.spec ~/rpmbuild/SPECS/
         rpmbuild -ba ~/rpmbuild/SPECS/etc-file-counter.spec
-        cp ~/rpmbuild/RPMS/noarch/*.rpm .
+        find ~/rpmbuild/RPMS -name "*.rpm" -exec cp {} . \;
 
     - name: Build DEB
       run: |
