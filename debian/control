@@ -1,0 +1,8 @@
+Package: etc-file-counter
+Version: 1.0
+Section: utils
+Priority: optional
+Architecture: all
+Maintainer: Yevhenii Lysenok <yevheniilysenok@gmail.com>
+Description: A script to count files in /etc
+ A simple bash script that calculates the amount of files excluding directories and links in /etc directory.
